@@ -1,0 +1,185 @@
+# 📦 DEPENDENCIAS PARA EDUMOD-ALPHA
+# Archivo generado automáticamente - Diciembre 2024
+
+## 🚀 INSTALACIÓN RÁPIDA (RECOMENDADA)
+# Simplemente ejecuta este comando en la raíz del proyecto:
+npm install
+
+## 📋 DEPENDENCIAS PRINCIPALES (PRODUCTION)
+# Si prefieres instalar una por una, aquí están todas:
+
+npm install @sentry/node@^7.92.0
+npm install @sentry/tracing@^7.120.3
+npm install axios@^1.10.0
+npm install bcrypt@^5.1.1
+npm install bcryptjs@^3.0.2
+npm install body-parser@^1.20.3
+npm install compression@^1.8.0
+npm install cors@^2.8.5
+npm install csurf@^1.10.0
+npm install dotenv@^16.6.1
+npm install ejs@^3.1.10
+npm install exceljs@^4.4.0
+npm install express@^4.21.2
+npm install express-async-errors@^3.1.1
+npm install express-mysql-session@^3.0.3
+npm install express-rate-limit@^7.5.1
+npm install express-session@^1.18.1
+npm install express-slow-down@^2.1.0
+npm install express-validator@^7.2.1
+npm install fluent-ffmpeg@^2.1.3
+npm install helmet@^8.1.0
+npm install hpp@^0.2.3
+npm install jsonwebtoken@^9.0.2
+npm install moment@^2.30.1
+npm install multer@^1.4.5-lts.1
+npm install mysql2@^3.14.1
+npm install node-fetch@^3.3.2
+npm install node-gtts@^2.0.2
+npm install nodemailer@^7.0.4
+npm install nodemon@^3.1.9
+npm install passport@^0.7.0
+npm install passport-google-oauth20@^2.0.0
+npm install puppeteer@^24.12.1
+npm install qrcode@^1.5.4
+npm install winston@^3.17.0
+
+## 🧪 DEPENDENCIAS DE DESARROLLO (DEV DEPENDENCIES)
+npm install --save-dev @playwright/test@^1.53.2
+npm install --save-dev jest@^30.0.4
+npm install --save-dev supertest@^7.1.1
+
+## ⚡ COMANDO TODO-EN-UNO (TODAS LAS DEPENDENCIAS)
+# Copia y pega este comando completo:
+
+npm install @sentry/node@^7.92.0 @sentry/tracing@^7.120.3 axios@^1.10.0 bcrypt@^5.1.1 bcryptjs@^3.0.2 body-parser@^1.20.3 compression@^1.8.0 cors@^2.8.5 csurf@^1.10.0 dotenv@^16.6.1 ejs@^3.1.10 exceljs@^4.4.0 express@^4.21.2 express-async-errors@^3.1.1 express-mysql-session@^3.0.3 express-rate-limit@^7.5.1 express-session@^1.18.1 express-slow-down@^2.1.0 express-validator@^7.2.1 fluent-ffmpeg@^2.1.3 helmet@^8.1.0 hpp@^0.2.3 jsonwebtoken@^9.0.2 moment@^2.30.1 multer@^1.4.5-lts.1 mysql2@^3.14.1 node-fetch@^3.3.2 node-gtts@^2.0.2 nodemailer@^7.0.4 nodemon@^3.1.9 passport@^0.7.0 passport-google-oauth20@^2.0.0 puppeteer@^24.12.1 qrcode@^1.5.4 winston@^3.17.0 --save-dev @playwright/test@^1.53.2 jest@^30.0.4 supertest@^7.1.1
+
+## 🗄️ SOFTWARE REQUERIDO DEL SISTEMA
+
+### Node.js (versión 16 o superior)
+- Descargar desde: https://nodejs.org/
+- Verificar instalación: node --version
+
+### MySQL (versión 8.0 o superior)
+- Descargar desde: https://dev.mysql.com/downloads/
+- Verificar instalación: mysql --version
+
+### FFmpeg (para procesamiento de audio)
+- Windows: https://ffmpeg.org/download.html
+- O usar: choco install ffmpeg (si tienes Chocolatey)
+- Verificar instalación: ffmpeg -version
+
+## ⚙️ CONFIGURACIÓN ADICIONAL
+
+### 1. Crear archivo de variables de entorno:
+cp env.example .env
+
+### 2. Configurar base de datos MySQL:
+mysql -u root -p
+CREATE DATABASE edumod_advanced;
+
+### 3. Ejecutar configuración inicial:
+node setup-database.js
+
+### 4. Verificar instalación:
+npm run verify
+
+## 🧪 COMANDOS DE TESTING
+
+# Tests unitarios
+npm test
+
+# Tests con coverage
+npm run test:coverage
+
+# Tests de integración
+npm run test:integration
+
+# Tests E2E
+npm run test:e2e
+
+# Todos los tests
+npm run test:all
+
+## 🚀 COMANDOS DE DESARROLLO
+
+# Modo desarrollo (con nodemon)
+npm run dev
+
+# Modo producción
+npm start
+
+## 📋 RESUMEN DE DEPENDENCIAS POR CATEGORÍA
+
+### Framework Web
+- express@^4.21.2
+- ejs@^3.1.10
+- body-parser@^1.20.3
+
+### Base de Datos
+- mysql2@^3.14.1
+- express-mysql-session@^3.0.3
+
+### Seguridad
+- helmet@^8.1.0
+- bcrypt@^5.1.1
+- bcryptjs@^3.0.2
+- jsonwebtoken@^9.0.2
+- express-rate-limit@^7.5.1
+- express-slow-down@^2.1.0
+- csurf@^1.10.0
+- hpp@^0.2.3
+
+### Autenticación
+- passport@^0.7.0
+- passport-google-oauth20@^2.0.0
+
+### Procesamiento de Audio
+- fluent-ffmpeg@^2.1.3
+- node-gtts@^2.0.2
+
+### Logging y Monitoreo
+- winston@^3.17.0
+- @sentry/node@^7.92.0
+- @sentry/tracing@^7.120.3
+
+### Testing
+- jest@^30.0.4
+- @playwright/test@^1.53.2
+- supertest@^7.1.1
+
+### Utilidades
+- moment@^2.30.1
+- multer@^1.4.5-lts.1
+- qrcode@^1.5.4
+- exceljs@^4.4.0
+- axios@^1.10.0
+- node-fetch@^3.3.2
+- nodemailer@^7.0.4
+- puppeteer@^24.12.1
+
+### Middleware
+- cors@^2.8.5
+- compression@^1.8.0
+- express-validator@^7.2.1
+- express-async-errors@^3.1.1
+
+### Desarrollo
+- nodemon@^3.1.9
+- dotenv@^16.6.1
+
+## 🔍 VERIFICACIÓN FINAL
+
+Después de instalar todas las dependencias, ejecuta:
+
+1. npm run verify
+2. npm test
+3. npm start
+
+Si todo funciona correctamente, tu proyecto estará listo para usar.
+
+---
+Generado automáticamente para EDUMOD-ALPHA
+Versión: 2.0.0
+Fecha: Diciembre 2024
+
